@@ -61,7 +61,7 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-extern global_t glovar;
+extern global_t vglo;
 
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
@@ -74,6 +74,6 @@ void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 stack_t *add_dnodeint_end(stack_t **head, const int n);
 stack_t *add_dnodeint(stack_t **head, const int n);
 void free_dlistint(stack_t *head);
-void free_glovar(void);
+void free_vglo(void);
 
 #endif
