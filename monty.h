@@ -75,5 +75,8 @@ stack_t *add_dnodeint_end(stack_t **head, const int n);
 stack_t *add_dnodeint(stack_t **head, const int n);
 void free_dlistint(stack_t *head);
 void free_vglo(void);
-
+char *strtok(char *str, const char *delim);
+int strcmp(const char *s1, const char *s2);
+int dprintf(int fd, const char *format, ...);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 #endif
